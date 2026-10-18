@@ -1,0 +1,359 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explore Sri Lanka | Travel & Tours</title>
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      color: #263238;
+    }
+
+    .navbar-brand {
+      font-size: 25px;
+      font-weight: bold;
+      color: #198754;
+    }
+
+    .hero {
+      min-height: 570px;
+      background:
+        linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)),
+        url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1800&q=85")
+        center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      color: white;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: clamp(38px, 6vw, 65px);
+      font-weight: bold;
+    }
+
+    .section-title {
+      font-weight: bold;
+      color: #176b45;
+    }
+
+    .destination-card {
+      border: none;
+      border-radius: 14px;
+      overflow: hidden;
+      box-shadow: 0 4px 16px rgba(0,0,0,.1);
+      transition: transform .3s;
+      height: 100%;
+    }
+
+    .destination-card:hover {
+      transform: translateY(-7px);
+    }
+
+    .destination-card img {
+      height: 220px;
+      object-fit: cover;
+    }
+
+    .price {
+      color: #198754;
+      font-size: 22px;
+      font-weight: bold;
+    }
+
+    .booking {
+      background: #eaf5ee;
+    }
+
+    footer {
+      background: #143b2b;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg bg-white sticky-top shadow-sm">
+  <div class="container">
+    <a class="navbar-brand" href="#">LankaTravels</a>
+
+    <button class="navbar-toggler" type="button"
+            data-bs-toggle="collapse" data-bs-target="#navbarMenu"
+            aria-controls="navbarMenu" aria-expanded="false"
+            aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarMenu">
+      <ul class="navbar-nav ms-auto align-items-lg-center">
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#destinations">Destinations</a></li>
+        <li class="nav-item"><a class="nav-link" href="#tours">Tour Packages</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+        <li class="nav-item ms-lg-3">
+          <a class="btn btn-success" href="#booking">Book a Tour</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<header class="hero" id="home">
+  <div class="container">
+    <h1>Discover the Beauty of Sri Lanka</h1>
+    <p class="lead my-4">
+      Explore beautiful beaches, green mountains, ancient cities,
+      and unforgettable adventures.
+    </p>
+    <a href="#destinations" class="btn btn-success btn-lg">
+      Explore Destinations
+    </a>
+    <a href="#booking" class="btn btn-outline-light btn-lg ms-2">
+      Plan Your Trip
+    </a>
+  </div>
+</header>
+
+<!-- Destinations -->
+<section class="py-5" id="destinations">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="section-title">Popular Destinations</h2>
+      <p>Discover some of the most beautiful places in Sri Lanka.</p>
+    </div>
+
+    <div class="row g-4">
+
+      <div class="col-md-6 col-lg-3">
+        <div class="card destination-card">
+          <img src="https://images.unsplash.com/photo-1588598198321-9735fd5f3f23?auto=format&fit=crop&w=700&q=80"
+               class="card-img-top" alt="Sigiriya rock fortress">
+          <div class="card-body">
+            <h5 class="card-title">Sigiriya</h5>
+            <p class="card-text">Discover ancient history and amazing views.</p>
+            <a href="#booking" class="btn btn-outline-success">Explore More</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3">
+        <div class="card destination-card">
+          <img src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=700&q=80"
+               class="card-img-top" alt="Mountain landscape in Ella">
+          <div class="card-body">
+            <h5 class="card-title">Ella</h5>
+            <p class="card-text">Enjoy mountain scenery and green tea gardens.</p>
+            <a href="#booking" class="btn btn-outline-success">Explore More</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3">
+        <div class="card destination-card">
+          <img src="https://images.unsplash.com/photo-1519046904884-53103b34b206?auto=format&fit=crop&w=700&q=80"
+               class="card-img-top" alt="Tropical beach">
+          <div class="card-body">
+            <h5 class="card-title">Mirissa</h5>
+            <p class="card-text">Relax on sandy beaches and enjoy the ocean.</p>
+            <a href="#booking" class="btn btn-outline-success">Explore More</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3">
+        <div class="card destination-card">
+          <img src="https://images.unsplash.com/photo-1590123732197-e7073d7c7d5b?auto=format&fit=crop&w=700&q=80"
+               class="card-img-top" alt="Historic architecture in Kandy">
+          <div class="card-body">
+            <h5 class="card-title">Kandy</h5>
+            <p class="card-text">Experience culture, temples, and local traditions.</p>
+            <a href="#booking" class="btn btn-outline-success">Explore More</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Tour Packages -->
+<section class="py-5 bg-light" id="tours">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="section-title">Our Tour Packages</h2>
+      <p>Choose a trip that suits your travel plans.</p>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card destination-card">
+          <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=800&q=80"
+               class="card-img-top" alt="Mountain adventure">
+          <div class="card-body">
+            <h5>Adventure Tour</h5>
+            <p>Explore mountains, waterfalls, and nature trails.</p>
+            <p class="price">From LKR 15,000</p>
+            <a href="#booking" class="btn btn-success">Book Now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card destination-card">
+          <img src="https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?auto=format&fit=crop&w=800&q=80"
+               class="card-img-top" alt="Tropical beach holiday">
+          <div class="card-body">
+            <h5>Beach Holiday</h5>
+            <p>Enjoy coastal scenery, sunshine, and relaxation.</p>
+            <p class="price">From LKR 20,000</p>
+            <a href="#booking" class="btn btn-success">Book Now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card destination-card">
+          <img src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=800&q=80"
+               class="card-img-top" alt="Historic travel destination">
+          <div class="card-body">
+            <h5>Cultural Tour</h5>
+            <p>Visit historic sites and experience Sri Lankan culture.</p>
+            <p class="price">From LKR 12,000</p>
+            <a href="#booking" class="btn btn-success">Book Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="small text-muted mt-3">
+      Sample prices for this demonstration website; actual tour prices
+      depend on itinerary and inclusions.
+    </p>
+  </div>
+</section>
+
+<!-- About -->
+<section class="py-5" id="about">
+  <div class="container">
+    <div class="row align-items-center g-4">
+      <div class="col-lg-6">
+        <img src="https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=1000&q=80"
+             class="img-fluid rounded-4" alt="Beautiful natural scenery">
+      </div>
+      <div class="col-lg-6">
+        <h2 class="section-title mb-3">Why Travel With Us?</h2>
+        <p>
+          LankaTravels is a sample travel website concept designed to help
+          visitors discover Sri Lanka's landscapes, culture, and attractions.
+        </p>
+        <p><i class="bi bi-check-circle-fill text-success"></i> Personalized travel plans</p>
+        <p><i class="bi bi-check-circle-fill text-success"></i> Flexible tour options</p>
+        <p><i class="bi bi-check-circle-fill text-success"></i> Memorable local experiences</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Booking Form -->
+<section class="booking py-5" id="booking">
+  <div class="container">
+    <div class="text-center mb-4">
+      <h2 class="section-title">Plan Your Trip</h2>
+      <p>Send us your travel details to get started.</p>
+    </div>
+
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <form id="bookingForm" class="bg-white p-4 rounded-4 shadow-sm">
+          <div class="row g-3">
+            <div class="col-md-6">
+              <label for="name" class="form-label">Full Name</label>
+              <input type="text" class="form-control" id="name" required>
+            </div>
+
+            <div class="col-md-6">
+              <label for="email" class="form-label">Email Address</label>
+              <input type="email" class="form-control" id="email" required>
+            </div>
+
+            <div class="col-md-6">
+              <label for="destination" class="form-label">Destination</label>
+              <select class="form-select" id="destination" required>
+                <option value="">Choose a destination</option>
+                <option>Sigiriya</option>
+                <option>Ella</option>
+                <option>Mirissa</option>
+                <option>Kandy</option>
+              </select>
+            </div>
+
+            <div class="col-md-6">
+              <label for="date" class="form-label">Travel Date</label>
+              <input type="date" class="form-control" id="date" required>
+            </div>
+
+            <div class="col-12">
+              <label for="message" class="form-label">Additional Details</label>
+              <textarea class="form-control" id="message" rows="4"
+                        placeholder="Tell us about your trip"></textarea>
+            </div>
+
+            <div class="col-12">
+              <button type="submit" class="btn btn-success btn-lg w-100">
+                Send Booking Request
+              </button>
+              <p id="formMessage" class="mt-3 mb-0" role="status"></p>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="py-4">
+  <div class="container text-center">
+    <h4>LankaTravels</h4>
+    <p>Discover Sri Lanka. Create unforgettable memories.</p>
+    <p>
+      <a href="#home" class="text-white text-decoration-none">Home</a> |
+      <a href="#destinations" class="text-white text-decoration-none">Destinations</a> |
+      <a href="#booking" class="text-white text-decoration-none">Contact</a>
+    </p>
+    <small>&copy; <span id="year"></span> LankaTravels. Demo website.</small>
+  </div>
+</footer>
+
+<!-- Bootstrap JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+
+  document.getElementById("bookingForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    document.getElementById("formMessage").textContent =
+      "Thank you! The demo form works, but your request has not been sent. Connect a backend to receive bookings.";
+
+    document.getElementById("formMessage").className =
+      "mt-3 mb-0 text-success";
+  });
+</script>
+
+</body>
+</html>
